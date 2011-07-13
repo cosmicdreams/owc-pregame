@@ -10,7 +10,7 @@
 /**
  * Implements hook_theme().
  */
-function lps_theme() {
+function owc_theme() {
   return array(
     // The form ID.
     'search_block_form' => array(
@@ -28,7 +28,7 @@ function lps_theme() {
  *  - Adds javascript to hide or show the word 'Search' on focus & blur
  *  - Adds/Removes the 'active' class so text can be greyed out when not active, or a more readable color when active.
  */
-  function theme_lps_search_block_form($vars) {
+  function theme_owc_search_block_form($vars) {
     $form = $vars['form'];
     unset($form['search_block_form']['#title']);
     unset($form['submit']['#value']);

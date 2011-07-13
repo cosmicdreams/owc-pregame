@@ -5,7 +5,7 @@ core = 7.x
 
 
 ; Base theme Javascript
-scripts[] = js/lps.js
+scripts[] = js/owc.js
 
 
 ; Base theme Stylesheets
