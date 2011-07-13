@@ -1,0 +1,83 @@
+name = Overnight Web Challenge
+description = Installation with modules and configuration specific to the Lifetouch Portrait Studios websites.
+core = 7.x
+
+; Tell Drupal about the .profile file
+files[] = owc.profile
+
+
+; Enable core modules
+dependencies[] = block
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = dblog
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = locale
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = overlay
+dependencies[] = path
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = taxonomy
+dependencies[] = toolbar
+dependencies[] = trigger
+
+
+; Enable contrib modules
+dependencies[] = advanced_help
+dependencies[] = bulk_export
+dependencies[] = conditional_fields
+dependencies[] = context_admin
+dependencies[] = ctools
+dependencies[] = date
+dependencies[] = date_api
+dependencies[] = date_popup
+dependencies[] = date_tools
+dependencies[] = date_views
+dependencies[] = entity
+dependencies[] = entity_token
+dependencies[] = features
+dependencies[] = feeds
+dependencies[] = feeds_tamper
+dependencies[] = field_group
+dependencies[] = gmap
+dependencies[] = gmap_location
+dependencies[] = gmap_macro_builder
+dependencies[] = job_scheduler
+dependencies[] = libraries
+dependencies[] = link
+dependencies[] = location
+dependencies[] = location_cck
+dependencies[] = location_phone
+dependencies[] = location_fax
+dependencies[] = page_manager
+dependencies[] = panels
+dependencies[] = panels_mini
+dependencies[] = panels_ipe
+dependencies[] = pathauto
+dependencies[] = rules
+dependencies[] = rules_admin
+dependencies[] = strongarm
+dependencies[] = token
+dependencies[] = views
+dependencies[] = views_bulk_operations
+dependencies[] = views_content
+dependencies[] = views_ui
+
+
+; Development specific modules
+; REMOVE FOR PRODUCTION
+dependencies[] = devel
+
+; Enable custom modules
+
+
+
+; Enable features last
+;dependencies[] = owc_example_feature_machine_name

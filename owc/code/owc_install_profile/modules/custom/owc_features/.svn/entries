@@ -1,0 +1,37 @@
+9
+
+dir
+18
+https://svn.sierrabravo.net/LIFETOUCHPS.Websites/trunk/code/lifetouch_install_profile/modules/custom/lps_features
+https://svn.sierrabravo.net/LIFETOUCHPS.Websites
+
+
+
+2011-07-12T04:41:01.162397Z
+18
+wvincent
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c5d23bf8-42ff-4fcf-9724-6582f18fbcb1
+
+lps_content_type_studio
+dir
+
+lps_feed_jcp_filtered_import
+dir
+
+lps_studio_conditional_fields
+dir
+
