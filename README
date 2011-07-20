@@ -1,6 +1,16 @@
-Instructions for use:
+How to build your own Drupal development site with this script.
 
+Step 0: Preliminaries
 
+* Setup a your own development environment the way you like.  Make sure you have a running:
+  * PHP enabled Web Server
+    * If necessary, setup a virtual host that points to a working folder
+  * MySQL database server
+    * Create a new database
+    * Create a user with full rights to that new database
+    * Make sure you know that user's password.
+
+Step
 
 To do:
 * Write instructions
