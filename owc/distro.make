@@ -12,12 +12,6 @@ projects[drupal][version] = 7
 
 ; Specifying themes to retrieve, and place into the sites/all/themes directory
 
-; Add base theme to the full Drupal distro build (sites/all/themes)
-projects[owc1][type] = theme
-projects[owc1][download][type] = svn
-projects[owc1][download][url] = https://svn.sierrabravo.net/LIFETOUCHPS.Websites/trunk/code/themes/lps
-projects[owc1][destination] = themes
-
 ; Specifying install profile to retrieve.
 
 ; Add Install Profile to the full Drupal distro build
