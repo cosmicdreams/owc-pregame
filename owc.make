@@ -108,3 +108,7 @@ projects[wysiwyg][version] = 2.x-dev
 projects[devel][subdir] = contrib
 projects[devel][type] = module
 projects[devel][version] = 1.x-dev
+
+projects[examples][subdir] = contrib
+projects[examples][type] = module
+projects[examples][version] = 1.x-dev
