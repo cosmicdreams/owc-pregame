@@ -173,6 +173,6 @@ projects[examples][subdir] = contrib
 projects[examples][type] = module
 projects[examples][version] = 1.x-dev
 
-projects[examples][subdir] = contrib
-projects[examples][type] = module
-projects[examples][version] = 1.x-dev
+projects[module_filter][subdir] = contrib
+projects[module_filter][type] = module
+projects[module_filter][version] = 1.x-dev
