@@ -47,6 +47,10 @@ projects[date][subdir] = contrib
 projects[date][type] = module
 projects[date][version] = 2.x-dev
 
+projects[devel][subdir] = contrib
+projects[devel][type] = module
+projects[devel][version] = 1.x-dev
+
 projects[entity][subdir] = contrib
 projects[entity][type] = module
 projects[entity][version] = 1.x-dev
@@ -54,6 +58,10 @@ projects[entity][version] = 1.x-dev
 projects[email][subdir] = contrib
 projects[email][type] = module
 projects[email][version] = 1.x-dev
+
+projects[examples][subdir] = contrib
+projects[examples][type] = module
+projects[examples][version] = 1.x-dev
 
 projects[features][subdir] = contrib
 projects[features][type] = module
@@ -106,6 +114,10 @@ projects[maestro][version] = 1.x-dev
 projects[menu_block][subdir] = contrib
 projects[menu_block][type] = module
 projects[menu_block][version] = 2.x-dev
+
+projects[module_filter][subdir] = contrib
+projects[module_filter][type] = module
+projects[module_filter][version] = 1.x-dev
 
 projects[navigation404][subdir] = contrib
 projects[navigation404][type] = module
@@ -160,19 +172,3 @@ projects[views_bulk_operations][version] = 3.x-dev
 projects[wysiwyg][subdir] = contrib
 projects[wysiwyg][type] = module
 projects[wysiwyg][version] = 2.x-dev
-
-
-; Development (REMOVE FOR PRODUCTION!)
-; -----------
-
-projects[devel][subdir] = contrib
-projects[devel][type] = module
-projects[devel][version] = 1.x-dev
-
-projects[examples][subdir] = contrib
-projects[examples][type] = module
-projects[examples][version] = 1.x-dev
-
-projects[module_filter][subdir] = contrib
-projects[module_filter][type] = module
-projects[module_filter][version] = 1.x-dev
