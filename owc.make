@@ -13,6 +13,10 @@ projects[advanced_help][subdir] = contrib
 projects[advanced_help][type] = module
 projects[advanced_help][version] = 1.x-dev
 
+projects[backup_migrate][subdir] = contrib
+projects[backup_migrate][type] = module
+projects[backup_migrate][version] = 2.x-dev
+
 projects[bean][subdir] = contrib
 projects[bean][type] = module
 projects[bean][version] = 1.x-dev
@@ -172,3 +176,10 @@ projects[views_bulk_operations][version] = 3.x-dev
 projects[wysiwyg][subdir] = contrib
 projects[wysiwyg][type] = module
 projects[wysiwyg][version] = 2.x-dev
+
+
+; Additional libraries
+
+libraries[civicrm][download][type] = get
+libraries[civicrm][download][url] = http://downloads.sourceforge.net/project/civicrm/civicrm-stable/4.0.5/civicrm-4.0.5-drupal.tar.gz?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fcivicrm%2Ffiles%2Fcivicrm-stable%2F4.0.5%2F&ts=1313097997&use_mirror=cdnetworks-us-2
+libraries[civicrm][download][destination] = modules

@@ -97,3 +97,61 @@ function owc_install() {
   // Disable the Advanced Help module nag message until it's production ready.
   variable_set('views_hide_help_message', TRUE);
 }
+
+/**
+ * Implements hook_install_tasks()
+ *
+ */
+function owc_install_tasks($install_state){
+  $task['default_content'] = array(
+    'display_name' => st('Import default content'),
+    'display' => TRUE,
+    'type' => 'batch',
+    'run' => INSTALL_TASK_RUN_IF_NOT_COMPLETED, // default to insert content
+    'function' => 'import_default_feeds',
+  ); 
+  
+  return $task;
+}
+
+function import_default_feeds($install_state){
+
+  // Files to import in specific order.
+  $files = array(
+    'menu_import' => 'menus.csv',
+    'taxonomy_import' => 'taxonomies.csv',    
+    'node_import' => 'nodes.csv',    
+  );
+
+  // Set the path to the folder where the data files are
+  $root = drupal_get_path('profile', 'owc') . '/data';
+  
+  // Import each file (in order)
+  foreach ($files as $feed => $file) {
+    //get the feed importer by machine name
+    $feedSource = feeds_source($feed);
+
+    // Set the file name to import
+    $filename = $root . $file;
+
+    if (!file_destination($filename, FILE_EXISTS_ERROR)) {
+      $config = $feedSource->getConfig();
+      $config['FeedsFileFetcher']['source'] = $filename;
+      $feedSource->setConfig($config);
+      $feedSource->save();
+
+      $batch = array(
+        'title' => t('Importing feeds'),
+        'operations' => array(
+          array('feeds_batch', array('import', $feed, 0)),
+        ),
+        'progress_message' => t('Current: @current | Remaining:
+          @remaining | Total: @total | Percentage: @percentage | Estimate:
+          @estimate | Elapsed: @elapsed'),
+      );
+      batch_set($batch);
+    }
+  }
+  batch_process('redirect-url');
+
+}
