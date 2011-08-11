@@ -172,3 +172,7 @@ projects[devel][version] = 1.x-dev
 projects[examples][subdir] = contrib
 projects[examples][type] = module
 projects[examples][version] = 1.x-dev
+
+projects[examples][subdir] = contrib
+projects[examples][type] = module
+projects[examples][version] = 1.x-dev
