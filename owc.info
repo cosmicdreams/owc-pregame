@@ -5,7 +5,6 @@ core = 7.x
 ; Tell Drupal about the .profile file
 files[] = owc.profile
 
-
 ; Enable core modules
 dependencies[] = block
 dependencies[] = contextual
@@ -27,7 +26,6 @@ dependencies[] = shortcut
 dependencies[] = taxonomy
 dependencies[] = toolbar
 dependencies[] = trigger
-
 
 ; Enable contrib modules
 dependencies[] = advanced_help
@@ -68,16 +66,15 @@ dependencies[] = token
 dependencies[] = views
 dependencies[] = views_bulk_operations
 dependencies[] = views_content
-dependencies[] = views_ui
-
 
 ; Development specific modules
 ; REMOVE FOR PRODUCTION
 dependencies[] = devel
+dependencies[] = module_filter
+dependencies[] = views_ui
 
 ; Enable custom modules
-
-
+;dependencies[] = owc_example_module_machine_name
 
 ; Enable features last
 ;dependencies[] = owc_example_feature_machine_name
