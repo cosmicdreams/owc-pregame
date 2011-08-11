@@ -70,7 +70,6 @@ dependencies[] = maestro_common
 dependencies[] = maestro_content_publish
 dependencies[] = maestro_inline_form_api_task
 dependencies[] = maestro_test_flows
-dependencies[] = maestro_test_flows
 dependencies[] = menu_block
 dependencies[] = menu_block_export
 dependencies[] = navigation404
