@@ -133,7 +133,7 @@ projects[rules][version] = 2.x-dev
 
 projects[search_config][subdir] = contrib
 projects[search_config][type] = module
-projects[search_config][version] = 3.x-dev
+projects[search_config][version] = 1.x-dev
 
 projects[seo_checklist][subdir] = contrib
 projects[seo_checklist][type] = module
