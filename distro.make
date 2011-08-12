@@ -30,9 +30,10 @@ projects[owc][download][url] = git@github.com:cosmicdreams/owc-pregame.git
 ; Modules
 ; -------
 
-projects[civicrm][download][type] = get
-projects[civicrm][download][url] = http://downloads.sourceforge.net/project/civicrm/civicrm-stable/4.0.5/civicrm-4.0.5-drupal.tar.gz
-projects[civicrm][download][destination] = sites/all/modules
+libraries[civicrm][download][type] = get
+
+libraries[civicrm][download][url] = http://downloads.sourceforge.net/project/civicrm/civicrm-stable/4.0.5/civicrm-4.0.5-drupal.tar.gz
+libraries[civicrm][download][destination] = modules
 
 ; Libraries
 ; ---------
