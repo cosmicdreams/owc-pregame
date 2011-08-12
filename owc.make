@@ -25,7 +25,7 @@ projects[conditional_fields][subdir] = contrib
 projects[conditional_fields][type] = module
 projects[conditional_fields][version] = 3.x-dev
 ; Patch to integrate conditional fields with features (for nodes only)
-;projects[conditional_fields][patch][] = http://drupal.org/files/issues/conditional_fields_features_integration-1191248-p0_format-1.patch
+; projects[conditional_fields][patch][] = http://drupal.org/files/issues/conditional_fields_features_integration-1191248-p0_format-1.patch
 
 projects[commerce][subdir] = contrib
 projects[commerce][type] = module

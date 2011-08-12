@@ -12,6 +12,11 @@ projects[drupal][version] = 7
 
 ; Specifying themes to retrieve, and place into the sites/all/themes directory
 
+projects[lps][type] = theme
+projects[lps][download][type] = git
+projects[lps][download][url] = cosmicdreams@git.drupal.org:sandbox/cosmicdreams/1245804.git
+projects[lps][destination] = themes
+
 ; Specifying install profile to retrieve.
 
 ; Add Install Profile to the full Drupal distro build
