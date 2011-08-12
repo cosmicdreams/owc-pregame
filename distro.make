@@ -12,10 +12,10 @@ projects[drupal][version] = 7
 
 ; Specifying themes to retrieve, and place into the sites/all/themes directory
 
-projects[lps][type] = theme
-projects[lps][download][type] = git
-projects[lps][download][url] = cosmicdreams@git.drupal.org:sandbox/cosmicdreams/1245804.git
-projects[lps][destination] = themes
+;projects[lps][type] = theme
+;projects[lps][download][type] = git
+;projects[lps][download][url] = cosmicdreams@git.drupal.org:sandbox/cosmicdreams/1245804.git
+;projects[lps][destination] = themes
 
 ; Specifying install profile to retrieve.
 
@@ -30,7 +30,9 @@ projects[owc][download][url] = git@github.com:cosmicdreams/owc-pregame.git
 ; Modules
 ; -------
 
-
+projects[civicrm][download][type] = get
+projects[civicrm][download][url] = http://downloads.sourceforge.net/project/civicrm/civicrm-stable/4.0.5/civicrm-4.0.5-drupal.tar.gz
+projects[civicrm][download][destination] = /sites/all/modules
 
 ; Libraries
 ; ---------
